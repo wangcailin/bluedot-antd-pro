@@ -1,0 +1,18 @@
+export default {
+  ACCESS_TOKEN_NAME: 'blue-dot-project-token',
+  API_URL_PREFIX: '/api-dev',
+  RSA_PUBLIC_KEY: `-----BEGIN PUBLIC KEY-----
+MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEArp+bk/aAzyJjx+NomBFG
+MyzMP5fxI0q9G6DHJkXvXF06ON2m2BlwNujO5dEM2DbVbfOg/FIWdXBEooC3RMB8
+Rz/YEBAu7P7Jrv2Ym2J/3nSIaDiALozazKr/G9ddYWvlXiOhiX6oEFxHypu/16y2
+IsEXA3vqRp06iNojjUbJTfS4KE665ouJWhlL9oTq0vcnoe+6ZNaDklKp5Ix0BsPS
+hLLbJycSsq7jI1hdnIlL3z8RlljxedeTkh2qKlgtSiJjKM6LCgiaYlmtw+golrP0
+o4j4spjtkm/dNpVA0H/heLMOqHdNS8B8zIQc6tG9y4CvKDIu0SaBZo/Iqh+3gStw
+I/d4/p2lDjX7DdtHbJgfQaTDoqm4a66fVoVqhrji6z44q3U/p1KMZFr5uoCOcsAh
+zvOTxGjn4ZeIJFqjFfCxG52ONmkkD0KBlmusqyZQn+xQC8gqmigpUR5IrdGPzbpl
+QXaTm6mZlsXcjpXMBFCjuYOY776RnQpPcZb65TZJfDZ29ocPN2HCdfIC8ood66dq
+OoBwiCIeuI3BqHJeVLTTYGuDmLdUxhMGB7Lhp/EiR/KnqPVXSvir0hSXw3Io74e5
+z93Yo6t2yX8FG8Paj+jb184QSO+wSZgdGrT0tju71XrLMWjNv4/Jmh8T14kLaY4T
+sh3cBEra1B4B0cjuklbIOscCAwEAAQ==
+-----END PUBLIC KEY-----`,
+};
