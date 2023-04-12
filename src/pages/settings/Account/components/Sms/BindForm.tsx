@@ -2,7 +2,7 @@ import { message } from 'antd';
 import { ModalForm } from '@ant-design/pro-components';
 import { bindSmsRule } from '../../../service';
 import BaseForm from './BaseForm';
-import { Crypto } from '@ant-design/pro-components';
+import { Crypto } from '@bluedot-tech/bluedot-antd';
 
 export default ({ fetchUserInfo, ...props }: any) => {
   return (
