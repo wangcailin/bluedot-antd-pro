@@ -1,0 +1,11 @@
+ingress:
+  enabled: true
+  hosts:
+    - host: xxx.blue-dot.com.cn
+      paths:
+        - path: /admin
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: blue-dot.com.cn
+      hosts:
+        - blue-dot.com.cn
