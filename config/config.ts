@@ -139,4 +139,7 @@ export default defineConfig({
   define: {
     ...define,
   },
+
+  base: '/admin/',
+  publicPath: '/admin/',
 });
