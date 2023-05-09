@@ -21,3 +21,11 @@ pnpm i
 ```bash
 pnpm start:dev
 ```
+
+## Package Support
+
+- **[@bluedot-tech/bluedot-antd](https://gitee.com/blue-dot-cn_cailin__wang/bluedot-antd)**
+
+- **[@ant-design](https://ant.design/)**
+
+- **[@ant-design/pro-components](https://procomponents.ant.design/)**
