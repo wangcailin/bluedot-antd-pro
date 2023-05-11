@@ -22,6 +22,10 @@ pnpm i
 pnpm start:dev
 ```
 
+## 目录结构规范
+
+遵循 [@ant-design](https://pro.ant.design/zh-CN/docs/folder) 最佳实践
+
 ## Package Support
 
 - **[@bluedot-tech/bluedot-antd](https://gitee.com/blue-dot-cn_cailin__wang/bluedot-antd)**

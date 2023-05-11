@@ -19,12 +19,12 @@ export default [
       {
         path: '/settings/account',
         name: 'account',
-        component: './settings/Account',
+        component: './Settings/Account',
       },
       {
         path: '/settings/staff',
         name: 'staff',
-        component: './settings/Staff',
+        component: './Settings/Staff',
       },
     ],
   },
