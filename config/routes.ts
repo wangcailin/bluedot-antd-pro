@@ -34,6 +34,11 @@ export default [
     component: './Demo',
   },
   {
+    path: '/form',
+    name: 'form',
+    component: './Form',
+  },
+  {
     path: '/welcome',
     component: './Welcome',
     hideInMenu: true,
