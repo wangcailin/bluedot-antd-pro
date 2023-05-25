@@ -1,6 +1,7 @@
 export default {
+  API_URL: '',
+  OSS_URL: '/backend/system/resource/oss-upload-url',
   ACCESS_TOKEN_NAME: 'blue-dot-project-token',
-  API_URL_PREFIX: '/api-dev',
   RSA_PUBLIC_KEY: `-----BEGIN PUBLIC KEY-----
 MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAzAU4KN4bW0gWTg1WdSq1
 Kdso70NBryes65IebLKlKZNisIYodIkmPz+sA09TD9Aa/00g/6yG0yqJ02MaE8dK
