@@ -47,7 +47,7 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^5.1.0",
-    "@ant-design/pro-components": "^2.4.15",
+    "@ant-design/pro-components": "^2.6.2",
     "@ant-design/use-emotion-css": "1.0.4",
     "@bluedot-tech/bluedot-antd": "3.2.3",
     "@umijs/route-utils": "^4.0.1",
