@@ -58,4 +58,5 @@ export default {
   'menu.settings.staff.role': '部门设置',
   'menu.settings.staff.user': '管理员设置',
   'menu.demo': 'Demo',
+  'menu.demo-dragger': '拖拽表单',
 };

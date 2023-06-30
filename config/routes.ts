@@ -39,6 +39,11 @@ export default [
     component: './Form',
   },
   {
+    path: '/demo-dragger',
+    name: 'demo-dragger',
+    component: './DemoDragger',
+  },
+  {
     path: '/welcome',
     component: './Welcome',
     hideInMenu: true,
