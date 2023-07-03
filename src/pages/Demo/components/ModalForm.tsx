@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import { ModalForm, ProFormText, ProForm } from '@ant-design/pro-components';
-import { Upload } from '@bluedot-tech/bluedot-antd';
+import { Upload, Category } from '@bluedot-tech/bluedot-antd';
+import { queryTree } from './service';
 
 export default (props: any) => {
   return (
@@ -26,6 +28,9 @@ export default (props: any) => {
         <Upload.ImgCrop aspect={410 / 410} maxCount={6} />
       </ProForm.Item>
       <ProFormText width="md" name="title" label="标题" rules={[{ required: true }]} />
+      <ProForm.Item name="tag_id" label="标签" rules={[{ required: true }]}>
+        <Category queryTree={queryTree} num={1} />
+      </ProForm.Item>
     </ModalForm>
   );
 };
