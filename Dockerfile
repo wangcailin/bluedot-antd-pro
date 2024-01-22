@@ -4,4 +4,4 @@ WORKDIR /usr/share/nginx/html
 COPY dist /usr/share/nginx/html
 COPY deploy/nginx.conf /etc/nginx/nginx.conf
 
-EXPOSE 80 443
+EXPOSE 80
