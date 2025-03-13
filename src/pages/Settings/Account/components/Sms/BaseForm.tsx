@@ -1,7 +1,7 @@
-import { message } from 'antd';
+import { Crypto } from '@/components/antd';
+import { LockOutlined, MobileOutlined } from '@ant-design/icons';
 import { ProFormCaptcha, ProFormText } from '@ant-design/pro-components';
-import { MobileOutlined, LockOutlined } from '@ant-design/icons';
-import { Crypto } from '@bluedot-tech/bluedot-antd';
+import { message } from 'antd';
 import { getCaptchaRule, getUnbindSmsRule } from '../../../service';
 
 export default ({ action, phone }: any) => {

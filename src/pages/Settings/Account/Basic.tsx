@@ -1,9 +1,9 @@
-import { useModel } from 'umi';
+import { Upload } from '@/components/antd';
 import { ProCard, ProForm, ProFormText } from '@ant-design/pro-components';
-import { Upload } from '@bluedot-tech/bluedot-antd';
 import { message } from 'antd';
-import style from './index.less';
+import { useModel } from 'umi';
 import { updatePersonalRule } from '../service';
+import style from './index.less';
 
 export default () => {
   const { initialState, setInitialState } = useModel('@@initialState');

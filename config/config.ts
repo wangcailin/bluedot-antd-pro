@@ -1,9 +1,9 @@
 // https://umijs.org/config/
 import { defineConfig } from '@umijs/max';
 import defaultSettings from './defaultSettings';
+import define from './define';
 import proxy from './proxy';
 import routes from './routes';
-import define from './define';
 
 const { REACT_APP_ENV = 'dev' } = process.env;
 
@@ -81,6 +81,11 @@ export default defineConfig({
     locale: true,
     ...defaultSettings,
   },
+
+  favicons: [
+    'https://lookstar-landing.oss-cn-beijing.aliyuncs.com/uploads/tenant/landing/202202/rc-upload-1645671333028-2.png',
+  ],
+
   /**
    * @name moment2dayjs 插件
    * @description 将项目中的 moment 替换为 dayjs
@@ -129,12 +134,16 @@ export default defineConfig({
   ],
   //================ pro 插件配置 =================
   presets: ['umi-presets-pro'],
-
+  /**
+   * @name openAPI 插件的配置
+   * @description 基于 openapi 的规范生成serve 和mock，能减少很多样板代码
+   * @doc https://pro.ant.design/zh-cn/docs/openapi/
+   */
   mfsu: {
     strategy: 'normal',
   },
+  esbuildMinifyIIFE: true,
   requestRecord: {},
-
   define: {
     ...define,
     API_URL_PREFIX: '/api',

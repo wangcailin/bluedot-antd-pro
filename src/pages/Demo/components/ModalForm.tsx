@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ModalForm, ProFormText, ProForm } from '@ant-design/pro-components';
-import { Upload, Category } from '@bluedot-tech/bluedot-antd';
+import { Category, Upload } from '@/components/antd';
+import { ModalForm, ProForm, ProFormText } from '@ant-design/pro-components';
 import { queryTree } from './service';
 
 export default (props: any) => {

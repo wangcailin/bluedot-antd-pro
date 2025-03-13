@@ -1,8 +1,8 @@
-import { message } from 'antd';
+import { Crypto } from '@/components/antd';
+import { LockOutlined, MailOutlined } from '@ant-design/icons';
 import { ProFormCaptcha, ProFormText } from '@ant-design/pro-components';
-import { MailOutlined, LockOutlined } from '@ant-design/icons';
+import { message } from 'antd';
 import { getCaptchaRule, getUnbindMailRule } from '../../../service';
-import { Crypto } from '@bluedot-tech/bluedot-antd';
 
 export default ({ action, email }: any) => {
   const props = {

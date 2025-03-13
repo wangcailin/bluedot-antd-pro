@@ -1,11 +1,11 @@
-import { message } from 'antd';
-import { useModel, history } from 'umi';
-import { stringify } from 'querystring';
+import { Crypto } from '@/components/antd';
+import { outLogin } from '@/services/ant-design-pro/api';
 import { ModalForm } from '@ant-design/pro-components';
+import { message } from 'antd';
+import { stringify } from 'querystring';
+import { history, useModel } from 'umi';
 import { passwordResetRule } from '../../../service';
 import BaseForm from './BaseForm';
-import { Crypto } from '@bluedot-tech/bluedot-antd';
-import { outLogin } from '@/services/ant-design-pro/api';
 
 /**
  * 退出登录，并且将当前的 url 保存

@@ -1,6 +1,6 @@
+import { Editor, Upload } from '@/components/antd';
 import { ProForm } from '@ant-design/pro-components';
 import { Card, message } from 'antd';
-import { Editor, Upload } from '@bluedot-tech/bluedot-antd';
 import { getRule, updateRule } from './service';
 export default () => {
   return (

@@ -1,16 +1,14 @@
 // import DragSort from '@/components/DragSortTable/DragSort';
-import type {ProColumns } from '@ant-design/pro-components';
+import { DragSort } from '@/components/antd';
 import { MenuOutlined } from '@ant-design/icons';
-import { DragSort } from '@bluedot-tech/bluedot-antd';
+import type { ProColumns } from '@ant-design/pro-components';
 import ModalForm from './components/ModalForm';
 
-
-import { queryRule, addRule, updateRule, updateRules, removeRule, getRule } from './service';
 import { Popconfirm, message } from 'antd';
 import { useState } from 'react';
+import { addRule, getRule, queryRule, removeRule, updateRule, updateRules } from './service';
 
 export default () => {
-
   //更新子组件的数据
   const [reloadDataTime, setReloadDataTime] = useState<any>();
 
@@ -26,7 +24,7 @@ export default () => {
     {
       title: '排序',
       dataIndex: 'sort',
-      hideInSearch:true
+      hideInSearch: true,
     },
     {
       title: '标题',
@@ -73,7 +71,19 @@ export default () => {
 
   return (
     <>
-      <DragSort reloadDataTime={reloadDataTime} ModalForm={ModalForm} queryRule={queryRule} search={true} addRule={addRule} headerTitle="demo-dragger" pagination={false} rowKey="sort" columns={columns} updateRule={updateRules} dragHandleRender={dragHandleRender}/>
+      <DragSort
+        reloadDataTime={reloadDataTime}
+        ModalForm={ModalForm}
+        queryRule={queryRule}
+        search={true}
+        addRule={addRule}
+        headerTitle="demo-dragger"
+        pagination={false}
+        rowKey="sort"
+        columns={columns}
+        updateRule={updateRules}
+        dragHandleRender={dragHandleRender}
+      />
     </>
   );
 };

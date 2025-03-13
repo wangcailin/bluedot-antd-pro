@@ -1,8 +1,8 @@
+import { Crypto } from '@/components/antd';
 import { StepsForm } from '@ant-design/pro-components';
-import BaseForm from './BaseForm';
-import { unbindSmsRule, bindSmsRule } from '../../../service';
 import { message } from 'antd';
-import { Crypto } from '@bluedot-tech/bluedot-antd';
+import { bindSmsRule, unbindSmsRule } from '../../../service';
+import BaseForm from './BaseForm';
 
 export default ({ fetchUserInfo, phone, ...props }: any) => {
   return (

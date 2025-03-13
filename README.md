@@ -1,35 +1,57 @@
-# Bluedot for Ant Design Pro
+# Ant Design Pro
 
-基于[Ant Design Pro](https://pro.ant.design)脚手架二次封装。
+This project is initialized with [Ant Design Pro](https://pro.ant.design). Follow is the quick guide for how to use.
 
-## 开始使用
+## Environment Prepare
 
-#### 1. 创建项目
-
-```bash
-pnpm create bluedot your-project-name
-```
-
-#### 2. 进入安装
+Install `node_modules`:
 
 ```bash
-pnpm i
+npm install
 ```
 
-#### 3. 开发调试
+or
 
 ```bash
-pnpm start:dev
+yarn
 ```
 
-## 目录结构规范
+## Provided Scripts
 
-遵循 [@ant-design](https://pro.ant.design/zh-CN/docs/folder) 最佳实践
+Ant Design Pro provides some useful script to help you quick start and build with web project, code style check and test.
 
-## Package Support
+Scripts provided in `package.json`. It's safe to modify or add additional script:
 
-- **[@bluedot-tech/bluedot-antd](https://gitee.com/blue-dot-cn_cailin__wang/bluedot-antd)**
+### Start project
 
-- **[@ant-design](https://ant.design/)**
+```bash
+npm start
+```
 
-- **[@ant-design/pro-components](https://procomponents.ant.design/)**
+### Build project
+
+```bash
+npm run build
+```
+
+### Check code style
+
+```bash
+npm run lint
+```
+
+You can also use script to auto fix some lint error:
+
+```bash
+npm run lint:fix
+```
+
+### Test code
+
+```bash
+npm test
+```
+
+## More
+
+You can view full document on our [official website](https://pro.ant.design). And welcome any feedback in our [github](https://github.com/ant-design/ant-design-pro).
