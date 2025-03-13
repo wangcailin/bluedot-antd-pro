@@ -1,10 +1,10 @@
-import { PlusOutlined, ExportOutlined } from '@ant-design/icons';
+import { ExportOutlined, PlusOutlined } from '@ant-design/icons';
 import type { ActionType, ProColumns } from '@ant-design/pro-components';
 import { ProTable } from '@ant-design/pro-components';
 import { Button, message, Popconfirm } from 'antd';
 import { useRef } from 'react';
-import { queryRule, addRule, updateRule, removeRule, getRule } from './service';
 import ModalForm from './components/ModalForm';
+import { addRule, getRule, queryRule, removeRule, updateRule } from './service';
 
 export default () => {
   const actionRef = useRef<ActionType>();
@@ -45,7 +45,7 @@ export default () => {
       title: '操作',
       valueType: 'option',
       key: 'option',
-      render: (text, record, _, action) => [
+      render: (text: any, record: any, _: any, action: any) => [
         <ModalForm
           title="编辑"
           onFinish={async (values: any) => {

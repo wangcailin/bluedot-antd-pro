@@ -31,7 +31,7 @@ export default ({ fetchUserInfo, email, ...props }: any) => {
         onFinish={async (value) => {
           try {
             const result = await unbindMailRule({ code: value.code });
-            if (result.errcode != 0) {
+            if (result.errcode !== 0) {
               message.error('验证失败');
               return false;
             }

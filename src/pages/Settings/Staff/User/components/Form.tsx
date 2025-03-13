@@ -1,15 +1,8 @@
-import { ProFormText, ProFormSelect } from '@ant-design/pro-components';
-import { useModel } from 'umi';
+import { ProFormSelect, ProFormText } from '@ant-design/pro-components';
 
 import { selectRoleRule } from '../../service';
 
-const getSuffix = (value: string) => {
-  return `@${value.split('@')[1]}`;
-};
-
 export default () => {
-  const { initialState } = useModel('@@initialState');
-
   return (
     <>
       <ProFormText

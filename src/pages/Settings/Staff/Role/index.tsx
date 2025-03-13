@@ -1,11 +1,11 @@
-import { useState, useRef } from 'react';
-import { Button, Popconfirm } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import type { ProColumns, ActionType } from '@ant-design/pro-table';
 import { ModalForm, ProTable } from '@ant-design/pro-components';
+import type { ActionType, ProColumns } from '@ant-design/pro-table';
+import { Button, Popconfirm } from 'antd';
+import { useRef, useState } from 'react';
 
+import { addRoleRule, queryRoleRule, removeRoleRule, updateRoleRule } from '../service';
 import Form from './components/Form';
-import { queryRoleRule, addRoleRule, updateRoleRule, removeRoleRule } from '../service';
 
 export default () => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
@@ -30,12 +30,13 @@ export default () => {
     {
       title: '操作',
       valueType: 'option',
-      render: (dom, record: any, index, action: any) => [
+      render: (dom: any, record: any, index: any, action: any) => [
         <a
           onClick={() => {
             setUpdateModalVisible(true);
             setRow(record);
           }}
+          key={`edit-${record.id}`}
         >
           编辑
         </a>,

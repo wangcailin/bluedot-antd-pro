@@ -13,7 +13,7 @@ export default () => {
   const [reloadDataTime, setReloadDataTime] = useState<any>();
 
   //定义拖动的颜色和形状
-  const dragHandleRender = (rowData: any, idx: any) => (
+  const dragHandleRender = () => (
     <>
       <MenuOutlined style={{ cursor: 'grab', color: 'blue' }} />
     </>
@@ -39,7 +39,7 @@ export default () => {
       title: '操作',
       valueType: 'option',
       key: 'option',
-      render: (text, record, _, action) => [
+      render: (text: any, record: any, _: any, action: any) => [
         <ModalForm
           title="编辑"
           onFinish={async (values: any) => {

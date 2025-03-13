@@ -1,4 +1,4 @@
-import { PageContainer, ProCard } from '@ant-design/pro-components';
+import { ProCard } from '@ant-design/pro-components';
 
 import Basic from './Basic';
 import Security from './Security';

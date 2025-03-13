@@ -1,17 +1,17 @@
-import { useState, useRef } from 'react';
-import { Button, Popconfirm, Tag, Badge } from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
-import type { ProColumns, ActionType } from '@ant-design/pro-table';
-import { ModalForm, EditableProTable } from '@ant-design/pro-components';
+import type { ActionType, ProColumns } from '@ant-design/pro-components';
+import { EditableProTable, ModalForm } from '@ant-design/pro-components';
+import { Badge, Button, Popconfirm, Tag } from 'antd';
+import { useRef, useState } from 'react';
 
-import Form from './components/Form';
 import {
-  queryUserRule,
-  selectRoleRule,
   addUserRule,
   changeUserRule,
+  queryUserRule,
   removeUserRule,
+  selectRoleRule,
 } from '../service';
+import Form from './components/Form';
 
 export default () => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
@@ -34,9 +34,9 @@ export default () => {
       },
       request: async () => {
         const res = await selectRoleRule();
-        return res.filter((item: any) => item.value != 'Super-Admin');
+        return res.filter((item: any) => item.value !== 'Super-Admin');
       },
-      render: (_, record: any) => record?.roles.map((item: string) => <Tag>{item}</Tag>),
+      render: (_, record: any) => record?.roles.map((item: string) => <Tag key={item}>{item}</Tag>),
     },
     {
       title: '状态',
@@ -79,9 +79,10 @@ export default () => {
       hideInSearch: true,
       valueType: 'option',
       render: (text, record: any, _, action) => {
-        if (record.is_admin == 0) {
+        if (record.is_admin === 0) {
           return [
             <a
+              key={`edit-${record.id}`}
               onClick={() => {
                 action?.startEditable?.(record.id);
                 // setUpdateModalVisible(true);

@@ -13,7 +13,7 @@ export default ({ fetchUserInfo, ...props }: any) => {
         const crypt_key = crypt.rsa_key_encrypt();
         value.email = crypt.aes_encrypt(value.email);
         const result = await bindMailRule({ ...value, crypt_key });
-        if (result.errcode == 0) {
+        if (result.errcode === 0) {
           message.success('绑定成功');
           await fetchUserInfo();
           props?.onVisibleChange(false);
