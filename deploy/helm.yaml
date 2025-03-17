@@ -9,3 +9,5 @@ ingress:
     - secretName: blue-dot.com.cn
       hosts:
         - blue-dot.com.cn
+livenessProbe: null
+readinessProbe: null
